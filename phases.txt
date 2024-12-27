@@ -1,0 +1,41 @@
+Phase 1: Basic Book Journal
+    1. Core Features
+        a. Book entry: Add a book with title, author, genre
+        b. Journal Entries:
+            i.Add notes for a book
+            ii.Link specific quote to journal entry
+        c. Plot summary: Write a brief summary for each book
+    
+    2. Flask front end
+        a. Home Page: List of books with links to repsective journal Entries
+        b. Add book page: Form to input book details
+        c. Journal page: form to add/edit jounral entries and link quotes
+
+    3. Backend
+        a. SQLite: to store books, quotes, and jounral entries
+        b. define database schema
+            i. books: title, author, genre, publication database
+            ii. journalEntries: book ID(foreign key), date, notes, linked quote
+            iii. quotes: book ID(foreign key), quote text, chapter/page number
+
+Phase 2: Enhance Features
+    1. Search and Filter
+
+    2. Visual Enhancements
+
+    3.File Handling
+
+
+
+Phase 3: AI and Algorithms
+    1. Story recommendations
+
+    2. Quote analysis
+
+Phase 4: Polished Web app
+    1. User authentication
+
+    2. Interactive dashboard
+
+    3. Cloud integration
+    

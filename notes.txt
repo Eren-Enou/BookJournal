@@ -1,0 +1,8 @@
+I am dumb
+
+
+~~~~~~~~~~~~~~12/26/24~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+pip install flask flask-sqlalchemy #core libraries
+project structure #separation of duties
+
