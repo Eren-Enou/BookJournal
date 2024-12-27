@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Add Journal Entry for {{ book.title }}</h2>
+<form method="post">
+    <label for="content">Content:</label><br>
+    <textarea id="content" name="content" rows="5" cols="40" required></textarea><br>
+    <button type="submit">Save Entry</button>
+</form>
+{% endblock %}

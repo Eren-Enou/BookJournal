@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Journal for {{ book.title }}</h2>
+<ul>
+    {% for entry in book.journal_entries %}
+        <li>
+            <p>{{ entry.date.strftime('%Y-%m-%d %H:%M:%S') }}</p>
+            <p>{{ entry.content }}</p>
+        </li>
+    {% else %}
+        <p>No journal entries yet.</p>
+    {% endfor %}
+</ul>
+<a href="{{ url_for('main.add_journal_entry', book_id=book.id) }}">Add Entry</a>
+{% endblock %}

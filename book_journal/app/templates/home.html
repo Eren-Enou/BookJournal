@@ -4,7 +4,19 @@
 <h2>All Books</h2>
 <ul>
     {% for book in books %}
-        <li><strong>{{ book.title }}</strong> by {{ book.author }} ({{ book.genre }}, {{ book.pub_date }})</li>
+        <li>
+            <strong>{{ book.title }}</strong> by {{ book.author }} ({{ book.genre }}, {{ book.pub_date }})
+            
+            <!-- Delete Book Form -->
+            <form action="{{ url_for('main.delete_book', book_id=book.id) }}" method="post" style="display: inline;">
+                <button type="submit">Delete</button>
+            </form>
+
+            <!-- Edit Book Link -->
+            <a href="{{ url_for('main.edit_book', book_id=book.id) }}">Edit</a>
+            <!-- Journal Entry Actions -->
+            <a href="{{ url_for('main.view_journal', book_id=book.id) }}">Manage Journal</a>
+        </li>
     {% else %}
         <p>No books added yet!</p>
     {% endfor %}
